@@ -1,0 +1,100 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: url('assets/background.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
+
+.container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  position: relative;
+  margin-bottom: 20px;
+  width: 90%;
+  max-width: 550px;
+}
+
+.title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #40E0D0; /* turquoise */
+  text-align: center;
+  /* black shadow/outlines + turquoise glow */
+  text-shadow: 
+    2px 2px 0 #000000,
+    -2px -2px 0 #000000,
+    2px -2px 0 #000000,
+    -2px 2px 0 #000000,
+    0 0 5px #40E0D0, 
+    0 0 10px #40E0D0, 
+    0 0 20px #40E0D0, 
+    0 0 30px #40E0D0;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 300px;
+}
+
+#spinButton {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #FF6F61;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+#spinButton:hover {
+  background-color: #FF3B2E;
+  box-shadow: 0 0 15px #FF3B2E;
+}
+
+canvas {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.pointer {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 25px solid #fff;
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Result box */
+#result {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 15px;
+  min-width: 250px;
+}
